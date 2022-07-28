@@ -23,7 +23,6 @@ function App() {
           {data.map((product) => (
             <div className='product' key={product.id}>
               <h3>{product.name}</h3>
-              <h3>{product.username}</h3>
             </div>
           ))}
         </div>
