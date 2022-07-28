@@ -17,7 +17,7 @@ function App() {
   return (
     <div className='App'>
       <header className='App-header'>
-        <h1> Front-End Success Auto Deploy CI/CD </h1>
+        <h1> Front-End Success Auto Deploy </h1>
         <h4> This is a EC2 Test CI/CD</h4>
         <div className='product-wrapper'>
           {data.map((product) => (
