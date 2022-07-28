@@ -6,9 +6,7 @@ function App() {
   const [data, setData] = useState([]);
 
   const getData = async () => {
-    const response = await axios.get(
-      'https://jsonplaceholder.typicode.com/users'
-    );
+    const response = await axios.get('/users');
     setData(response.data);
   };
 
