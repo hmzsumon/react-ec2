@@ -6,7 +6,7 @@ function App() {
   const [data, setData] = useState([]);
 
   const getData = async () => {
-    const response = await axios.get('/products');
+    const response = await axios.get('/users');
     setData(response.data);
   };
 
@@ -23,7 +23,7 @@ function App() {
           {data.map((product) => (
             <div className='product' key={product.id}>
               <h3>{product.name}</h3>
-              <p>{product.price}</p>
+              <h3>{product.username}</h3>
             </div>
           ))}
         </div>
